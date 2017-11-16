@@ -79,7 +79,7 @@ public class TBinaryProtocol: TProtocol {
       messageName = try read()
     } else {
       if strictRead {
-        let errorMessage = "Missing message version, old client? Message Name: \(currentMessageName)"
+        let errorMessage = "Missing message version, old client? Message Name: \(String(describing: currentMessageName))"
         throw TProtocolError(error: .invalidData,
                              message: errorMessage)
       }
