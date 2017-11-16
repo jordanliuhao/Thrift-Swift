@@ -454,6 +454,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = __PBXFileRef_Thrift.xcodeproj/Configs/Project.xcconfig /* Thrift.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -461,6 +463,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = __PBXFileRef_Thrift.xcodeproj/Configs/Project.xcconfig /* Thrift.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
