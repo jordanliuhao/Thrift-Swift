@@ -68,6 +68,9 @@ public struct TSet<Element : TSerializable & Hashable> : SetAlgebra, Hashable, C
     self.storage = storage
   }
   
+  public func get() -> Set<Element> {
+    return storage
+  }
   public func contains(_ member: Element) -> Bool {
     return storage.contains(member)
   }
