@@ -52,6 +52,10 @@ public struct TMap<Key : TSerializable & Hashable, Value : TSerializable>: Colle
   public init(_ dict: [Key: Value]) {
     storage = dict
   }
+    
+    public func get() -> Dictionary<Key, Value> {
+        return storage
+    }
 
   /// read only access to storage if needed as Dictionary<K,V>
   public var dictionary: [Key: Value] {
